@@ -89,6 +89,7 @@ namespace gestionAPP
         {
 
         }
+        '
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -97,11 +98,7 @@ namespace gestionAPP
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MySqlDataReader msreader = dataconn.GetDataReader("Select * FROM livres");
-            while (msreader.Read())
-            {
-                MessageBox.Show(msreader["titre"].ToString());
-            }
+           
         }
     }
 }
