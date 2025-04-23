@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-namespace GestionApp
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-=======
-﻿using MySql.Data.MySqlClient;
+
+
+using GestionApp;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +56,7 @@ namespace gestionAPP
         private void label2_Click(object sender, EventArgs e)
         {
 
->>>>>>> ca5613df8715ea781f773535092be433e3f4a76b
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -70,16 +64,16 @@ namespace gestionAPP
 
         }
 
-<<<<<<< HEAD
-        private void connexion_Click(object sender, EventArgs e)
-=======
+
+        private void connexion_Click(object sender, EventArgs e) { }
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
->>>>>>> ca5613df8715ea781f773535092be433e3f4a76b
+
         {
 
         }
 
-<<<<<<< HEAD
+
         private void Inscription_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormInscription formInscription = new FormInscription();
@@ -91,7 +85,7 @@ namespace gestionAPP
         {
 
         }
-=======
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -116,7 +110,7 @@ namespace gestionAPP
         {
 
         }
-        '
+        
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -127,6 +121,6 @@ namespace gestionAPP
         {
            
         }
->>>>>>> ca5613df8715ea781f773535092be433e3f4a76b
+
     }
 }
