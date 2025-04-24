@@ -131,8 +131,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlproduit.xaml.cs">
-      <DependentUpon>UserControlproduit.xaml</DependentUpon>
+    <Compile Include="UserControlProduit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProduit.Designer.cs">
+      <DependentUpon>UserControlProduit.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
@@ -159,6 +162,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlProduit.resx">
+      <DependentUpon>UserControlProduit.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -193,12 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\accueillir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="UserControlproduit.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
