@@ -40,185 +40,186 @@ namespace GestionApp
         /// </summary>
         private void InitializeComponent()
         {
-            Nom = new Label();
-            Commerce = new Label();
-            Decrpt = new Label();
-            Adresse = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            Tel = new Label();
-            textBox5 = new TextBox();
-            titre = new Label();
-            inscrp = new Button();
-            MDP = new Label();
-            textBox6 = new TextBox();
-            texte = new Label();
-            connexion = new LinkLabel();
-            SuspendLayout();
+            this.Nom = new System.Windows.Forms.Label();
+            this.Commerce = new System.Windows.Forms.Label();
+            this.Decrpt = new System.Windows.Forms.Label();
+            this.Adresse = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Tel = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.titre = new System.Windows.Forms.Label();
+            this.inscrp = new System.Windows.Forms.Button();
+            this.MDP = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.texte = new System.Windows.Forms.Label();
+            this.connexion = new System.Windows.Forms.LinkLabel();
+            this.SuspendLayout();
             // 
             // Nom
             // 
-            Nom.AutoSize = true;
-            Nom.Location = new Point(212, 85);
-            Nom.Name = "Nom";
-            Nom.Size = new Size(47, 17);
-            Nom.TabIndex = 0;
-            Nom.Text = "Nom :";
+            this.Nom.AutoSize = true;
+            this.Nom.Location = new System.Drawing.Point(212, 80);
+            this.Nom.Name = "Nom";
+            this.Nom.Size = new System.Drawing.Size(42, 16);
+            this.Nom.TabIndex = 0;
+            this.Nom.Text = "Nom :";
             // 
             // Commerce
             // 
-            Commerce.AutoSize = true;
-            Commerce.Location = new Point(212, 171);
-            Commerce.Name = "Commerce";
-            Commerce.Size = new Size(142, 17);
-            Commerce.TabIndex = 1;
-            Commerce.Text = "Nom du commerce :";
+            this.Commerce.AutoSize = true;
+            this.Commerce.Location = new System.Drawing.Point(212, 161);
+            this.Commerce.Name = "Commerce";
+            this.Commerce.Size = new System.Drawing.Size(127, 16);
+            this.Commerce.TabIndex = 1;
+            this.Commerce.Text = "Nom du commerce :";
             // 
             // Decrpt
             // 
-            Decrpt.AutoSize = true;
-            Decrpt.Location = new Point(212, 225);
-            Decrpt.Name = "Decrpt";
-            Decrpt.Size = new Size(185, 17);
-            Decrpt.TabIndex = 2;
-            Decrpt.Text = "Description du commerce :";
+            this.Decrpt.AutoSize = true;
+            this.Decrpt.Location = new System.Drawing.Point(212, 212);
+            this.Decrpt.Name = "Decrpt";
+            this.Decrpt.Size = new System.Drawing.Size(166, 16);
+            this.Decrpt.TabIndex = 2;
+            this.Decrpt.Text = "Description du commerce :";
             // 
             // Adresse
             // 
-            Adresse.AutoSize = true;
-            Adresse.Location = new Point(212, 271);
-            Adresse.Name = "Adresse";
-            Adresse.Size = new Size(70, 17);
-            Adresse.TabIndex = 3;
-            Adresse.Text = "Adresse :";
+            this.Adresse.AutoSize = true;
+            this.Adresse.Location = new System.Drawing.Point(212, 255);
+            this.Adresse.Name = "Adresse";
+            this.Adresse.Size = new System.Drawing.Size(64, 16);
+            this.Adresse.TabIndex = 3;
+            this.Adresse.Text = "Adresse :";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(427, 77);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(228, 25);
-            textBox1.TabIndex = 4;
+            this.textBox1.Location = new System.Drawing.Point(427, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(228, 22);
+            this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(427, 127);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(228, 25);
-            textBox2.TabIndex = 5;
+            this.textBox2.Location = new System.Drawing.Point(427, 120);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(228, 22);
+            this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(427, 171);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(228, 25);
-            textBox3.TabIndex = 6;
+            this.textBox3.Location = new System.Drawing.Point(427, 161);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(228, 22);
+            this.textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(427, 222);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(228, 25);
-            textBox4.TabIndex = 7;
+            this.textBox4.Location = new System.Drawing.Point(427, 209);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(228, 24);
+            this.textBox4.TabIndex = 7;
             // 
             // Tel
             // 
-            Tel.AutoSize = true;
-            Tel.Location = new Point(212, 130);
-            Tel.Name = "Tel";
-            Tel.Size = new Size(34, 17);
-            Tel.TabIndex = 8;
-            Tel.Text = "Tel :";
+            this.Tel.AutoSize = true;
+            this.Tel.Location = new System.Drawing.Point(212, 122);
+            this.Tel.Name = "Tel";
+            this.Tel.Size = new System.Drawing.Size(33, 16);
+            this.Tel.TabIndex = 8;
+            this.Tel.Text = "Tel :";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(427, 263);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(228, 25);
-            textBox5.TabIndex = 9;
+            this.textBox5.Location = new System.Drawing.Point(427, 248);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(228, 22);
+            this.textBox5.TabIndex = 9;
             // 
             // titre
             // 
-            titre.AutoSize = true;
-            titre.Location = new Point(367, 22);
-            titre.Name = "titre";
-            titre.Size = new Size(100, 17);
-            titre.TabIndex = 10;
-            titre.Text = "INSCRIPTION";
+            this.titre.AutoSize = true;
+            this.titre.Location = new System.Drawing.Point(367, 21);
+            this.titre.Name = "titre";
+            this.titre.Size = new System.Drawing.Size(92, 16);
+            this.titre.TabIndex = 10;
+            this.titre.Text = "INSCRIPTION";
             // 
             // inscrp
             // 
-            inscrp.Location = new Point(367, 363);
-            inscrp.Name = "inscrp";
-            inscrp.Size = new Size(122, 37);
-            inscrp.TabIndex = 11;
-            inscrp.Text = "S'inscrire";
-            inscrp.UseVisualStyleBackColor = true;
+            this.inscrp.Location = new System.Drawing.Point(367, 342);
+            this.inscrp.Name = "inscrp";
+            this.inscrp.Size = new System.Drawing.Size(122, 35);
+            this.inscrp.TabIndex = 11;
+            this.inscrp.Text = "S\'inscrire";
+            this.inscrp.UseVisualStyleBackColor = true;
+            this.inscrp.Click += new System.EventHandler(this.inscrp_Click);
             // 
             // MDP
             // 
-            MDP.AutoSize = true;
-            MDP.Location = new Point(212, 323);
-            MDP.Name = "MDP";
-            MDP.Size = new Size(103, 17);
-            MDP.TabIndex = 12;
-            MDP.Text = "Mot de passe :";
+            this.MDP.AutoSize = true;
+            this.MDP.Location = new System.Drawing.Point(212, 304);
+            this.MDP.Name = "MDP";
+            this.MDP.Size = new System.Drawing.Size(95, 16);
+            this.MDP.TabIndex = 12;
+            this.MDP.Text = "Mot de passe :";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(427, 315);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(228, 25);
-            textBox6.TabIndex = 13;
-            textBox6.UseSystemPasswordChar = true;
+            this.textBox6.Location = new System.Drawing.Point(427, 296);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(228, 22);
+            this.textBox6.TabIndex = 13;
+            this.textBox6.UseSystemPasswordChar = true;
             // 
             // texte
             // 
-            texte.AutoSize = true;
-            texte.Location = new Point(212, 424);
-            texte.Name = "texte";
-            texte.Size = new Size(191, 17);
-            texte.TabIndex = 14;
-            texte.Text = "Vous avez deja un compte ?";
+            this.texte.AutoSize = true;
+            this.texte.Location = new System.Drawing.Point(212, 399);
+            this.texte.Name = "texte";
+            this.texte.Size = new System.Drawing.Size(175, 16);
+            this.texte.TabIndex = 14;
+            this.texte.Text = "Vous avez deja un compte ?";
             // 
             // connexion
             // 
-            connexion.AutoSize = true;
-            connexion.Location = new Point(409, 424);
-            connexion.Name = "connexion";
-            connexion.Size = new Size(115, 17);
-            connexion.TabIndex = 15;
-            connexion.TabStop = true;
-            connexion.Text = "Connectez-vous";
-            connexion.LinkClicked += connexion_LinkClicked;
+            this.connexion.AutoSize = true;
+            this.connexion.Location = new System.Drawing.Point(409, 399);
+            this.connexion.Name = "connexion";
+            this.connexion.Size = new System.Drawing.Size(103, 16);
+            this.connexion.TabIndex = 15;
+            this.connexion.TabStop = true;
+            this.connexion.Text = "Connectez-vous";
             // 
             // FormInscription
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(connexion);
-            Controls.Add(texte);
-            Controls.Add(textBox6);
-            Controls.Add(MDP);
-            Controls.Add(inscrp);
-            Controls.Add(titre);
-            Controls.Add(textBox5);
-            Controls.Add(Tel);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(Adresse);
-            Controls.Add(Decrpt);
-            Controls.Add(Commerce);
-            Controls.Add(Nom);
-            Name = "FormInscription";
-            Text = "FormInscription";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 424);
+            this.Controls.Add(this.connexion);
+            this.Controls.Add(this.texte);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.MDP);
+            this.Controls.Add(this.inscrp);
+            this.Controls.Add(this.titre);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.Tel);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Adresse);
+            this.Controls.Add(this.Decrpt);
+            this.Controls.Add(this.Commerce);
+            this.Controls.Add(this.Nom);
+            this.Name = "FormInscription";
+            this.Text = "FormInscription";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
