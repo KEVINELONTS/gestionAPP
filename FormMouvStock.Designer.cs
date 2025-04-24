@@ -105,12 +105,13 @@
             // 
             // enrg
             // 
-            this.enrg.Location = new System.Drawing.Point(270, 344);
+            this.enrg.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.enrg.Location = new System.Drawing.Point(299, 353);
             this.enrg.Name = "enrg";
             this.enrg.Size = new System.Drawing.Size(117, 49);
             this.enrg.TabIndex = 7;
             this.enrg.Text = "Effectuer";
-            this.enrg.UseVisualStyleBackColor = true;
+            this.enrg.UseVisualStyleBackColor = false;
             this.enrg.Click += new System.EventHandler(this.enrg_Click);
             // 
             // date

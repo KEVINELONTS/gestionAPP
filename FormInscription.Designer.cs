@@ -150,12 +150,13 @@ namespace GestionApp
             // 
             // inscrp
             // 
-            this.inscrp.Location = new System.Drawing.Point(367, 342);
+            this.inscrp.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.inscrp.Location = new System.Drawing.Point(348, 338);
             this.inscrp.Name = "inscrp";
-            this.inscrp.Size = new System.Drawing.Size(122, 35);
+            this.inscrp.Size = new System.Drawing.Size(111, 41);
             this.inscrp.TabIndex = 11;
             this.inscrp.Text = "S\'inscrire";
-            this.inscrp.UseVisualStyleBackColor = true;
+            this.inscrp.UseVisualStyleBackColor = false;
             this.inscrp.Click += new System.EventHandler(this.inscrp_Click);
             // 
             // MDP
@@ -187,12 +188,13 @@ namespace GestionApp
             // connexion
             // 
             this.connexion.AutoSize = true;
-            this.connexion.Location = new System.Drawing.Point(409, 399);
+            this.connexion.Location = new System.Drawing.Point(393, 399);
             this.connexion.Name = "connexion";
             this.connexion.Size = new System.Drawing.Size(103, 16);
             this.connexion.TabIndex = 15;
             this.connexion.TabStop = true;
             this.connexion.Text = "Connectez-vous";
+            this.connexion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.connexion_LinkClicked_1);
             // 
             // FormInscription
             // 

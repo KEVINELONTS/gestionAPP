@@ -39,12 +39,12 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.Titre = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.Label();
+            this.deconn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.notif = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.deconn = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelContent.SuspendLayout();
             this.panelHeader.SuspendLayout();
@@ -132,6 +132,7 @@
             this.produit.TabIndex = 3;
             this.produit.Text = "Produits";
             this.produit.UseVisualStyleBackColor = false;
+            this.produit.Click += new System.EventHandler(this.produit_Click);
             // 
             // stats
             // 
@@ -198,6 +199,19 @@
             this.user.Text = "User";
             this.user.Click += new System.EventHandler(this.user_Click);
             // 
+            // deconn
+            // 
+            this.deconn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.deconn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deconn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deconn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deconn.Location = new System.Drawing.Point(25, 351);
+            this.deconn.Name = "deconn";
+            this.deconn.Size = new System.Drawing.Size(146, 34);
+            this.deconn.TabIndex = 8;
+            this.deconn.Text = "Deconnection";
+            this.deconn.UseVisualStyleBackColor = false;
+            // 
             // panel4
             // 
             this.panel4.BackgroundImage = global::gestionAPP.Properties.Resources.accueillir;
@@ -215,6 +229,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(357, 233);
             this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::gestionAPP.Properties.Resources.utilisateur;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(11, 11);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(32, 30);
+            this.panel2.TabIndex = 6;
             // 
             // panel1
             // 
@@ -234,28 +257,6 @@
             this.notif.Name = "notif";
             this.notif.Size = new System.Drawing.Size(27, 30);
             this.notif.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::gestionAPP.Properties.Resources.utilisateur;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 30);
-            this.panel2.TabIndex = 6;
-            // 
-            // deconn
-            // 
-            this.deconn.BackColor = System.Drawing.SystemColors.Highlight;
-            this.deconn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.deconn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deconn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deconn.Location = new System.Drawing.Point(25, 351);
-            this.deconn.Name = "deconn";
-            this.deconn.Size = new System.Drawing.Size(146, 34);
-            this.deconn.TabIndex = 8;
-            this.deconn.Text = "Deconnection";
-            this.deconn.UseVisualStyleBackColor = false;
             // 
             // DashboardForm
             // 

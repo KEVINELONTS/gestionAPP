@@ -46,5 +46,19 @@ namespace gestionAPP
         {
 
         }
+
+        private void LoadUserControl(UserControlProduit userControl_P)
+        {
+            panelContent.Controls.Clear(); // Supprimer tout ce qui est déjà dedans
+            userControl_P.Dock = DockStyle.Fill; // Pour qu’il prenne tout l’espace
+            panelContent.Controls.Add(userControl_P); // Ajouter le nouveau contrôle
+        }
+
+        private void produit_Click(object sender, EventArgs e)
+        {
+            UserControlProduit ucProduits = new UserControlProduit();
+            LoadUserControl(ucProduits);
+
+        }
     }
 }

@@ -59,5 +59,10 @@ namespace GestionApp
             MessageBox.Show("Inscription réussie !");
 
         }
+
+        private void connexion_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

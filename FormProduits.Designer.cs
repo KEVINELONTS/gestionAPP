@@ -140,12 +140,13 @@ namespace GestionApp
             // 
             // ajouter
             // 
+            this.ajouter.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ajouter.Location = new System.Drawing.Point(292, 367);
             this.ajouter.Name = "ajouter";
             this.ajouter.Size = new System.Drawing.Size(151, 45);
             this.ajouter.TabIndex = 9;
             this.ajouter.Text = "Ajouter";
-            this.ajouter.UseVisualStyleBackColor = true;
+            this.ajouter.UseVisualStyleBackColor = false;
             this.ajouter.Click += new System.EventHandler(this.button1_Click);
             // 
             // prixU
