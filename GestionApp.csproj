@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -111,6 +117,12 @@
     <Compile Include="FormInscription.Designer.cs">
       <DependentUpon>FormInscription.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMouvStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMouvStock.Designer.cs">
+      <DependentUpon>FormMouvStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProduits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,11 +131,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlproduit.xaml.cs">
+      <DependentUpon>UserControlproduit.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInscription.resx">
       <DependentUpon>FormInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMouvStock.resx">
+      <DependentUpon>FormMouvStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProduits.resx">
       <DependentUpon>FormProduits.cs</DependentUpon>
@@ -151,6 +172,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parametres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parametres-cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utilisateur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accueillir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControlproduit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
