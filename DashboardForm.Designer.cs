@@ -29,99 +29,60 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.deconn = new System.Windows.Forms.Button();
-            this.user = new System.Windows.Forms.Label();
-            this.utils = new System.Windows.Forms.Panel();
             this.deconex = new System.Windows.Forms.Button();
             this.stats = new System.Windows.Forms.Button();
             this.produit = new System.Windows.Forms.Button();
             this.mouv = new System.Windows.Forms.Button();
-            this.menu = new System.Windows.Forms.Label();
             this.util = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.panelwel = new System.Windows.Forms.Panel();
-            this.panelimg = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.param = new System.Windows.Forms.Panel();
-            this.notif = new System.Windows.Forms.Panel();
-            this.Titre = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.titre = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
-            this.panelContent.SuspendLayout();
-            this.panelHeader.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panelMenu.Controls.Add(this.deconn);
-            this.panelMenu.Controls.Add(this.user);
-            this.panelMenu.Controls.Add(this.utils);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.panelMenu.Controls.Add(this.util);
+            this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.deconex);
             this.panelMenu.Controls.Add(this.stats);
             this.panelMenu.Controls.Add(this.produit);
             this.panelMenu.Controls.Add(this.mouv);
-            this.panelMenu.Controls.Add(this.menu);
-            this.panelMenu.Controls.Add(this.util);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 60);
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 390);
+            this.panelMenu.Size = new System.Drawing.Size(210, 544);
             this.panelMenu.TabIndex = 0;
-            // 
-            // deconn
-            // 
-            this.deconn.BackColor = System.Drawing.SystemColors.Highlight;
-            this.deconn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.deconn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deconn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deconn.Location = new System.Drawing.Point(25, 351);
-            this.deconn.Name = "deconn";
-            this.deconn.Size = new System.Drawing.Size(146, 34);
-            this.deconn.TabIndex = 8;
-            this.deconn.Text = "Deconnection";
-            this.deconn.UseVisualStyleBackColor = false;
-            // 
-            // user
-            // 
-            this.user.AutoSize = true;
-            this.user.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.user.Location = new System.Drawing.Point(49, 20);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(52, 21);
-            this.user.TabIndex = 7;
-            this.user.Text = "User";
-            this.user.Click += new System.EventHandler(this.user_Click);
-            // 
-            // utils
-            // 
-            this.utils.BackgroundImage = global::gestionAPP.Properties.Resources.utilisateur;
-            this.utils.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.utils.Location = new System.Drawing.Point(11, 11);
-            this.utils.Name = "utils";
-            this.utils.Size = new System.Drawing.Size(32, 30);
-            this.utils.TabIndex = 6;
             // 
             // deconex
             // 
-            this.deconex.BackColor = System.Drawing.SystemColors.Highlight;
-            this.deconex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.deconex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deconex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.deconex.FlatAppearance.BorderSize = 0;
+            this.deconex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deconex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deconex.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deconex.Location = new System.Drawing.Point(25, 404);
+            this.deconex.Location = new System.Drawing.Point(25, 278);
             this.deconex.Name = "deconex";
             this.deconex.Size = new System.Drawing.Size(146, 34);
             this.deconex.TabIndex = 5;
-            this.deconex.Text = "Deconnection";
+            this.deconex.Text = "Categories";
             this.deconex.UseVisualStyleBackColor = false;
+            this.deconex.Click += new System.EventHandler(this.deconex_Click);
             // 
             // stats
             // 
-            this.stats.BackColor = System.Drawing.SystemColors.Highlight;
-            this.stats.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.stats.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.stats.FlatAppearance.BorderSize = 0;
+            this.stats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stats.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stats.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.stats.Location = new System.Drawing.Point(25, 293);
+            this.stats.Location = new System.Drawing.Point(25, 419);
             this.stats.Name = "stats";
             this.stats.Size = new System.Drawing.Size(146, 34);
             this.stats.TabIndex = 4;
@@ -131,11 +92,12 @@
             // 
             // produit
             // 
-            this.produit.BackColor = System.Drawing.SystemColors.Highlight;
-            this.produit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.produit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.produit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.produit.FlatAppearance.BorderSize = 0;
+            this.produit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.produit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.produit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.produit.Location = new System.Drawing.Point(25, 233);
+            this.produit.Location = new System.Drawing.Point(25, 138);
             this.produit.Name = "produit";
             this.produit.Size = new System.Drawing.Size(146, 34);
             this.produit.TabIndex = 3;
@@ -145,135 +107,131 @@
             // 
             // mouv
             // 
-            this.mouv.BackColor = System.Drawing.SystemColors.Highlight;
-            this.mouv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.mouv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mouv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.mouv.FlatAppearance.BorderSize = 0;
+            this.mouv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mouv.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mouv.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mouv.Location = new System.Drawing.Point(25, 170);
+            this.mouv.Location = new System.Drawing.Point(25, 203);
             this.mouv.Name = "mouv";
             this.mouv.Size = new System.Drawing.Size(146, 34);
             this.mouv.TabIndex = 2;
             this.mouv.Text = "Mouvements";
             this.mouv.UseVisualStyleBackColor = false;
             // 
-            // menu
-            // 
-            this.menu.AutoSize = true;
-            this.menu.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.menu.Location = new System.Drawing.Point(34, 54);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(100, 39);
-            this.menu.TabIndex = 1;
-            this.menu.Text = "MENU :";
-            this.menu.Click += new System.EventHandler(this.menu_Click);
-            // 
             // util
             // 
-            this.util.BackColor = System.Drawing.SystemColors.Highlight;
-            this.util.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.util.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.util.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.util.FlatAppearance.BorderSize = 0;
+            this.util.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.util.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.util.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.util.Location = new System.Drawing.Point(25, 113);
+            this.util.Location = new System.Drawing.Point(25, 485);
             this.util.Name = "util";
             this.util.Size = new System.Drawing.Size(146, 34);
             this.util.TabIndex = 0;
             this.util.Text = "Utilisateurs";
             this.util.UseVisualStyleBackColor = false;
+            this.util.Click += new System.EventHandler(this.util_Click);
             // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelContent.Controls.Add(this.panelwel);
-            this.panelContent.Controls.Add(this.panelimg);
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelContent.Location = new System.Drawing.Point(200, 60);
+            this.panelContent.Location = new System.Drawing.Point(210, 100);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(600, 390);
+            this.panelContent.Size = new System.Drawing.Size(867, 444);
             this.panelContent.TabIndex = 1;
             this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
-            // panelwel
+            // panel1
             // 
-            this.panelwel.BackgroundImage = global::gestionAPP.Properties.Resources.accueillir;
-            this.panelwel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelwel.Location = new System.Drawing.Point(108, 244);
-            this.panelwel.Name = "panelwel";
-            this.panelwel.Size = new System.Drawing.Size(357, 141);
-            this.panelwel.TabIndex = 2;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(156)))), ((int)(((byte)(253)))));
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.titre);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(210, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(867, 100);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelimg
+            // titre
             // 
-            this.panelimg.BackgroundImage = global::gestionAPP.Properties.Resources.accord;
-            this.panelimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelimg.Location = new System.Drawing.Point(108, 5);
-            this.panelimg.Name = "panelimg";
-            this.panelimg.Size = new System.Drawing.Size(357, 233);
-            this.panelimg.TabIndex = 1;
+            this.titre.AutoSize = true;
+            this.titre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titre.ForeColor = System.Drawing.Color.White;
+            this.titre.Location = new System.Drawing.Point(250, 18);
+            this.titre.Name = "titre";
+            this.titre.Size = new System.Drawing.Size(354, 47);
+            this.titre.TabIndex = 0;
+            this.titre.Text = "Gestion De Stock";
             // 
-            // panelHeader
+            // button1
             // 
-            this.panelHeader.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.panelHeader.Controls.Add(this.param);
-            this.panelHeader.Controls.Add(this.notif);
-            this.panelHeader.Controls.Add(this.Titre);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(800, 60);
-            this.panelHeader.TabIndex = 0;
-            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(25, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Operations";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // param
+            // button4
             // 
-            this.param.BackgroundImage = global::gestionAPP.Properties.Resources.parametres_cog;
-            this.param.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.param.Location = new System.Drawing.Point(763, 13);
-            this.param.Name = "param";
-            this.param.Size = new System.Drawing.Size(25, 30);
-            this.param.TabIndex = 2;
+            this.button4.BackgroundImage = global::gestionAPP.Properties.Resources.setting_2;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(18, 23);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(50, 58);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // notif
+            // button3
             // 
-            this.notif.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.notif.BackgroundImage = global::gestionAPP.Properties.Resources.notification;
-            this.notif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.notif.Location = new System.Drawing.Point(719, 12);
-            this.notif.Name = "notif";
-            this.notif.Size = new System.Drawing.Size(27, 30);
-            this.notif.TabIndex = 1;
+            this.button3.BackgroundImage = global::gestionAPP.Properties.Resources.notif_1;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(753, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(46, 47);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // Titre
+            // button2
             // 
-            this.Titre.AutoSize = true;
-            this.Titre.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.Titre.Font = new System.Drawing.Font("Palatino Linotype", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titre.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Titre.Location = new System.Drawing.Point(3, 12);
-            this.Titre.Name = "Titre";
-            this.Titre.Size = new System.Drawing.Size(148, 31);
-            this.Titre.TabIndex = 0;
-            this.Titre.Text = "Gestion APP";
-            this.Titre.Click += new System.EventHandler(this.Titre_Click);
+            this.button2.BackgroundImage = global::gestionAPP.Properties.Resources.power2;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(805, 18);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 58);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1077, 544);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelHeader);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DashboardForm";
             this.Text = "DashboardForm";
             this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.panelMenu.ResumeLayout(false);
-            this.panelMenu.PerformLayout();
-            this.panelContent.ResumeLayout(false);
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -282,20 +240,16 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelContent;
-        private System.Windows.Forms.Label menu;
         private System.Windows.Forms.Button util;
         private System.Windows.Forms.Button mouv;
         private System.Windows.Forms.Button deconex;
         private System.Windows.Forms.Button stats;
         private System.Windows.Forms.Button produit;
-        private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.Label Titre;
-        private System.Windows.Forms.Panel notif;
-        private System.Windows.Forms.Panel param;
-        private System.Windows.Forms.Label user;
-        private System.Windows.Forms.Panel utils;
-        private System.Windows.Forms.Panel panelimg;
-        private System.Windows.Forms.Panel panelwel;
-        private System.Windows.Forms.Button deconn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label titre;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

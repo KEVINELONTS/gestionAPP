@@ -1,13 +1,16 @@
-﻿using System;
+﻿using Mysqlx.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace gestionAPP
 {
@@ -20,32 +23,25 @@ namespace gestionAPP
 
         private void enrg_Click(object sender, EventArgs e)
         {
-            string typeMouvement = Type.Text;
-            int quantite = int.Parse(Qte.Text);
-            DateTime dateMouvement = dateTimePicker1.Value;
-            string observation = observ.Text;
+          
+        }
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StockAppDB.mdf;Integrated Security=True";
+        private void FormMouvStock_Load(object sender, EventArgs e)
+        {
+           
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO Mouvements (TypeMouvement, Quantite, DateMouvement, Observation) " +
-                               "VALUES (@TypeMouvement, @Quantite, @DateMouvement, @Observation)";
+        }
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@TypeMouvement", typeMouvement);
-                    cmd.Parameters.AddWithValue("@Quantite", quantite);
-                    cmd.Parameters.AddWithValue("@DateMouvement", dateMouvement);
-                    cmd.Parameters.AddWithValue("@Observation", observation);
+        public void ArrondirControles(Control crtl, int rayon)
+        {
+            GraphicsPath patht = new GraphicsPath();
+            patht.AddArc(0, 0, rayon, rayon, 180, 90);
+            patht.AddArc(crtl.Width - rayon, 0, rayon, rayon, 270, 90);
+            patht.AddArc(crtl.Width - rayon, crtl.Height - rayon, rayon, rayon, 0, 90);
+            patht.AddArc(0, crtl.Height - rayon, rayon, rayon, 90, 90);
+            patht.CloseAllFigures();
 
-                    cmd.ExecuteNonQuery();
-                }
-            }
-
-            MessageBox.Show("Mouvement enregistré avec succès !");
-
+            crtl.Region = new Region(patht);
         }
     }
 }

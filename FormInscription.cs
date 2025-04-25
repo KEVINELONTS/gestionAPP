@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,6 +70,29 @@ namespace GestionApp
         private void connexion_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void FormInscription_Load(object sender, EventArgs e)
+        {
+            ArrondirControles(inscrp, 20);
+            ArrondirControles(textBox1, 20);
+            ArrondirControles(textBox2, 20);
+            ArrondirControles(textBox3, 20);
+            ArrondirControles(textBox4, 20);
+            ArrondirControles(textBox5, 20);
+            ArrondirControles(textBox6, 20);
+        }
+
+        public void ArrondirControles(Control crtl, int rayon)
+        {
+            GraphicsPath patht = new GraphicsPath();
+            patht.AddArc(0, 0, rayon, rayon, 180, 90);
+            patht.AddArc(crtl.Width - rayon, 0, rayon, rayon, 270, 90);
+            patht.AddArc(crtl.Width - rayon, crtl.Height - rayon, rayon, rayon, 0, 90);
+            patht.AddArc(0, crtl.Height - rayon, rayon, rayon, 90, 90);
+            patht.CloseAllFigures();
+
+            crtl.Region = new Region(patht);
         }
     }
 }

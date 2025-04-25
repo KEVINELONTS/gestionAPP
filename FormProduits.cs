@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GestionApp
 {
@@ -35,39 +37,42 @@ namespace GestionApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nom = Nom.Text;
-            int quantite = int.Parse(Qte.Text);
-            string description = descrp.Text;
-            string mesure = mesures.Text;
-            decimal prix = decimal.Parse(prixU.Text);
-            int seuil = int.Parse(Seuil.Text);
-            string categorie = categ.Text;
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StockAppDB.mdf;Integrated Security=True";
+        }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO Produits (Nom, Quantite, Description, Mesure, PrixUnitaire, SeuilAlerte, Categorie) " +
-                               "VALUES (@Nom, @Quantite, @Description, @Mesure, @PrixUnitaire, @SeuilAlerte, @Categorie)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Nom", nom);
-                    cmd.Parameters.AddWithValue("@Quantite", quantite);
-                    cmd.Parameters.AddWithValue("@Description", description);
-                    cmd.Parameters.AddWithValue("@Mesure", mesure);
-                    cmd.Parameters.AddWithValue("@PrixUnitaire", prix);
-                    cmd.Parameters.AddWithValue("@SeuilAlerte", seuil);
-                    cmd.Parameters.AddWithValue("@Categorie", categorie);
+        private void FormProduits_Load(object sender, EventArgs e)
+        {
+            ArrondirControles(ajouter, 20);
+            ArrondirControles(textBox1, 20);
+            ArrondirControles(textBox2, 20);
+            ArrondirControles(textBox3, 20);
+            
+        }
 
-                    cmd.ExecuteNonQuery();
-                }
-            }
+        public void ArrondirControles(Control crtl, int rayon)
+        {
+            GraphicsPath patht = new GraphicsPath();
+            patht.AddArc(0, 0, rayon, rayon, 180, 90);
+            patht.AddArc(crtl.Width - rayon, 0, rayon, rayon, 270, 90);
+            patht.AddArc(crtl.Width - rayon, crtl.Height - rayon, rayon, rayon, 0, 90);
+            patht.AddArc(0, crtl.Height - rayon, rayon, rayon, 90, 90);
+            patht.CloseAllFigures();
 
-    // Appeler la méthode de rafraîchissement du DataGridView dans FormGestionProduits
-       //((FormGestionProduits)this.Owner).ChargerProduits(); // Assure-toi d'avoir cette méthode là-bas
+            crtl.Region = new Region(patht);
+        }
 
-            this.Close(); // Ferme le formulaire après ajout
+        private void categ_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

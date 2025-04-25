@@ -53,147 +53,132 @@ namespace gestionAPP
         private void InitializeComponent()
         {
             this.Nom = new System.Windows.Forms.Label();
-            this.Adresse = new System.Windows.Forms.Label();
-            this.Tel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.connexion = new System.Windows.Forms.Button();
-            this.MDP = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.Inscription = new System.Windows.Forms.LinkLabel();
-            this.Inscp = new System.Windows.Forms.Label();
+            this.conn = new System.Windows.Forms.Label();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Nom
             // 
             this.Nom.AutoSize = true;
-            this.Nom.Location = new System.Drawing.Point(147, 44);
+            this.Nom.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nom.Location = new System.Drawing.Point(81, 162);
+            this.Nom.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(42, 16);
+            this.Nom.Size = new System.Drawing.Size(62, 21);
             this.Nom.TabIndex = 0;
             this.Nom.Text = "Nom :";
             // 
-            // Adresse
-            // 
-            this.Adresse.AutoSize = true;
-            this.Adresse.Location = new System.Drawing.Point(147, 112);
-            this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(64, 16);
-            this.Adresse.TabIndex = 1;
-            this.Adresse.Text = "Adresse :";
-            // 
-            // Tel
-            // 
-            this.Tel.AutoSize = true;
-            this.Tel.Location = new System.Drawing.Point(147, 165);
-            this.Tel.Name = "Tel";
-            this.Tel.Size = new System.Drawing.Size(33, 16);
-            this.Tel.TabIndex = 2;
-            this.Tel.Text = "Tel :";
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(362, 41);
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(70, 187);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 22);
+            this.textBox1.Size = new System.Drawing.Size(367, 56);
             this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(362, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 22);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(362, 157);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 22);
-            this.textBox3.TabIndex = 5;
             // 
             // connexion
             // 
             this.connexion.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.connexion.Location = new System.Drawing.Point(311, 283);
+            this.connexion.FlatAppearance.BorderSize = 0;
+            this.connexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.connexion.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.connexion.Location = new System.Drawing.Point(112, 396);
+            this.connexion.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.connexion.Name = "connexion";
-            this.connexion.Size = new System.Drawing.Size(150, 37);
+            this.connexion.Size = new System.Drawing.Size(263, 63);
             this.connexion.TabIndex = 6;
             this.connexion.Text = "Se connecter";
             this.connexion.UseVisualStyleBackColor = false;
             this.connexion.Click += new System.EventHandler(this.connexion_Click_1);
             // 
-            // MDP
+            // conn
             // 
-            this.MDP.AutoSize = true;
-            this.MDP.Location = new System.Drawing.Point(147, 228);
-            this.MDP.Name = "MDP";
-            this.MDP.Size = new System.Drawing.Size(95, 16);
-            this.MDP.TabIndex = 8;
-            this.MDP.Text = "Mot de passe :";
+            this.conn.AutoSize = true;
+            this.conn.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.conn.Location = new System.Drawing.Point(142, 61);
+            this.conn.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.conn.Name = "conn";
+            this.conn.Size = new System.Drawing.Size(233, 47);
+            this.conn.TabIndex = 12;
+            this.conn.Text = "Connexion";
             // 
-            // textBox4
+            // textBox2
             // 
-            this.textBox4.Location = new System.Drawing.Point(362, 212);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(211, 22);
-            this.textBox4.TabIndex = 9;
-            this.textBox4.UseSystemPasswordChar = true;
+            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(70, 300);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(367, 57);
+            this.textBox2.TabIndex = 3;
             // 
-            // Inscription
+            // label1
             // 
-            this.Inscription.AutoSize = true;
-            this.Inscription.Location = new System.Drawing.Point(450, 376);
-            this.Inscription.Name = "Inscription";
-            this.Inscription.Size = new System.Drawing.Size(95, 16);
-            this.Inscription.TabIndex = 10;
-            this.Inscription.TabStop = true;
-            this.Inscription.Text = "Inscrivez-vous!";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(81, 275);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mot de Passe :";
             // 
-            // Inscp
+            // button1
             // 
-            this.Inscp.AutoSize = true;
-            this.Inscp.Location = new System.Drawing.Point(187, 376);
-            this.Inscp.Name = "Inscp";
-            this.Inscp.Size = new System.Drawing.Size(223, 16);
-            this.Inscp.TabIndex = 11;
-            this.Inscp.Text = "vous n\'avez pas encore de compte?";
+            this.button1.BackgroundImage = global::gestionAPP.Properties.Resources.croix_icone;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(426, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 60);
+            this.button1.TabIndex = 13;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 424);
-            this.Controls.Add(this.Inscp);
-            this.Controls.Add(this.Inscription);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.MDP);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ClientSize = new System.Drawing.Size(524, 626);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.conn);
             this.Controls.Add(this.connexion);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Tel);
-            this.Controls.Add(this.Adresse);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Nom);
+            this.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         private Label Nom;
-        private Label Adresse;
-        private Label Tel;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
         private Button connexion;
-        private Label MDP;
-        private TextBox textBox4;
-        private LinkLabel Inscription;
-        private Label Inscp; } }
+        private Label conn;
+        private PageSetupDialog pageSetupDialog1;
+        private TextBox textBox2;
+        private Label label1;
+        private Button button1;
+    } }
 
 //#region Code généré par le Concepteur Windows Form
 

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace gestionAPP
 {
-    public partial class UserControlProduit : UserControl
+    public partial class UserControlCategorie : UserControl
     {
-        public UserControlProduit()
+        public UserControlCategorie()
         {
             InitializeComponent();
-        }
-
-        private void UserControlProduit_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

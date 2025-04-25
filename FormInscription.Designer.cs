@@ -61,99 +61,114 @@ namespace GestionApp
             // Nom
             // 
             this.Nom.AutoSize = true;
-            this.Nom.Location = new System.Drawing.Point(212, 80);
+            this.Nom.Location = new System.Drawing.Point(265, 120);
+            this.Nom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(42, 16);
+            this.Nom.Size = new System.Drawing.Size(58, 24);
             this.Nom.TabIndex = 0;
             this.Nom.Text = "Nom :";
             // 
             // Commerce
             // 
             this.Commerce.AutoSize = true;
-            this.Commerce.Location = new System.Drawing.Point(212, 161);
+            this.Commerce.Location = new System.Drawing.Point(265, 242);
+            this.Commerce.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Commerce.Name = "Commerce";
-            this.Commerce.Size = new System.Drawing.Size(127, 16);
+            this.Commerce.Size = new System.Drawing.Size(169, 24);
             this.Commerce.TabIndex = 1;
             this.Commerce.Text = "Nom du commerce :";
             // 
             // Decrpt
             // 
             this.Decrpt.AutoSize = true;
-            this.Decrpt.Location = new System.Drawing.Point(212, 212);
+            this.Decrpt.Location = new System.Drawing.Point(265, 318);
+            this.Decrpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Decrpt.Name = "Decrpt";
-            this.Decrpt.Size = new System.Drawing.Size(166, 16);
+            this.Decrpt.Size = new System.Drawing.Size(225, 24);
             this.Decrpt.TabIndex = 2;
             this.Decrpt.Text = "Description du commerce :";
             // 
             // Adresse
             // 
             this.Adresse.AutoSize = true;
-            this.Adresse.Location = new System.Drawing.Point(212, 255);
+            this.Adresse.Location = new System.Drawing.Point(265, 382);
+            this.Adresse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(64, 16);
+            this.Adresse.Size = new System.Drawing.Size(84, 24);
             this.Adresse.TabIndex = 3;
             this.Adresse.Text = "Adresse :";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(427, 72);
+            this.textBox1.Location = new System.Drawing.Point(534, 115);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 22);
+            this.textBox1.Size = new System.Drawing.Size(284, 29);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(427, 120);
+            this.textBox2.Location = new System.Drawing.Point(534, 180);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(228, 22);
+            this.textBox2.Size = new System.Drawing.Size(284, 29);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(427, 161);
+            this.textBox3.Location = new System.Drawing.Point(534, 242);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(228, 22);
+            this.textBox3.Size = new System.Drawing.Size(284, 29);
             this.textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(427, 209);
+            this.textBox4.Location = new System.Drawing.Point(534, 314);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(228, 24);
+            this.textBox4.Size = new System.Drawing.Size(284, 34);
             this.textBox4.TabIndex = 7;
             // 
             // Tel
             // 
             this.Tel.AutoSize = true;
-            this.Tel.Location = new System.Drawing.Point(212, 122);
+            this.Tel.Location = new System.Drawing.Point(265, 183);
+            this.Tel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Tel.Name = "Tel";
-            this.Tel.Size = new System.Drawing.Size(33, 16);
+            this.Tel.Size = new System.Drawing.Size(45, 24);
             this.Tel.TabIndex = 8;
             this.Tel.Text = "Tel :";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(427, 248);
+            this.textBox5.Location = new System.Drawing.Point(534, 372);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(228, 22);
+            this.textBox5.Size = new System.Drawing.Size(284, 29);
             this.textBox5.TabIndex = 9;
             // 
             // titre
             // 
             this.titre.AutoSize = true;
-            this.titre.Location = new System.Drawing.Point(367, 21);
+            this.titre.Font = new System.Drawing.Font("Sitka Subheading", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titre.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.titre.Location = new System.Drawing.Point(441, 37);
+            this.titre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titre.Name = "titre";
-            this.titre.Size = new System.Drawing.Size(92, 16);
+            this.titre.Size = new System.Drawing.Size(198, 40);
             this.titre.TabIndex = 10;
             this.titre.Text = "INSCRIPTION";
             // 
             // inscrp
             // 
             this.inscrp.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.inscrp.Location = new System.Drawing.Point(348, 338);
+            this.inscrp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inscrp.Location = new System.Drawing.Point(435, 507);
+            this.inscrp.Margin = new System.Windows.Forms.Padding(4);
             this.inscrp.Name = "inscrp";
-            this.inscrp.Size = new System.Drawing.Size(111, 41);
+            this.inscrp.Size = new System.Drawing.Size(139, 62);
             this.inscrp.TabIndex = 11;
             this.inscrp.Text = "S\'inscrire";
             this.inscrp.UseVisualStyleBackColor = false;
@@ -162,35 +177,39 @@ namespace GestionApp
             // MDP
             // 
             this.MDP.AutoSize = true;
-            this.MDP.Location = new System.Drawing.Point(212, 304);
+            this.MDP.Location = new System.Drawing.Point(265, 456);
+            this.MDP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MDP.Name = "MDP";
-            this.MDP.Size = new System.Drawing.Size(95, 16);
+            this.MDP.Size = new System.Drawing.Size(125, 24);
             this.MDP.TabIndex = 12;
             this.MDP.Text = "Mot de passe :";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(427, 296);
+            this.textBox6.Location = new System.Drawing.Point(534, 444);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(228, 22);
+            this.textBox6.Size = new System.Drawing.Size(284, 29);
             this.textBox6.TabIndex = 13;
             this.textBox6.UseSystemPasswordChar = true;
             // 
             // texte
             // 
             this.texte.AutoSize = true;
-            this.texte.Location = new System.Drawing.Point(212, 399);
+            this.texte.Location = new System.Drawing.Point(265, 598);
+            this.texte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.texte.Name = "texte";
-            this.texte.Size = new System.Drawing.Size(175, 16);
+            this.texte.Size = new System.Drawing.Size(228, 24);
             this.texte.TabIndex = 14;
             this.texte.Text = "Vous avez deja un compte ?";
             // 
             // connexion
             // 
             this.connexion.AutoSize = true;
-            this.connexion.Location = new System.Drawing.Point(393, 399);
+            this.connexion.Location = new System.Drawing.Point(491, 598);
+            this.connexion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.connexion.Name = "connexion";
-            this.connexion.Size = new System.Drawing.Size(103, 16);
+            this.connexion.Size = new System.Drawing.Size(132, 24);
             this.connexion.TabIndex = 15;
             this.connexion.TabStop = true;
             this.connexion.Text = "Connectez-vous";
@@ -198,9 +217,9 @@ namespace GestionApp
             // 
             // FormInscription
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 424);
+            this.ClientSize = new System.Drawing.Size(1000, 636);
             this.Controls.Add(this.connexion);
             this.Controls.Add(this.texte);
             this.Controls.Add(this.textBox6);
@@ -217,8 +236,12 @@ namespace GestionApp
             this.Controls.Add(this.Decrpt);
             this.Controls.Add(this.Commerce);
             this.Controls.Add(this.Nom);
+            this.Font = new System.Drawing.Font("Sitka Subheading", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormInscription";
             this.Text = "FormInscription";
+            this.Load += new System.EventHandler(this.FormInscription_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

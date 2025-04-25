@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace gestionAPP
 {
-    public partial class UserControlProduit : UserControl
+    public partial class UserControlMouvStock : UserControl
     {
-        public UserControlProduit()
+        public UserControlMouvStock()
         {
             InitializeComponent();
         }
 
-        private void UserControlProduit_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

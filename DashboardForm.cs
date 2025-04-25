@@ -64,24 +64,44 @@ namespace gestionAPP
         private void DashboardForm_Load(object sender, EventArgs e)
         {
             //notification
-            notif.BackgroundImage = Properties.Resources.notification;
-            notif.BackgroundImageLayout = ImageLayout.Zoom;
+            //notif.BackgroundImage = Properties.Resources.notification;
+            //notif.BackgroundImageLayout = ImageLayout.Zoom;
 
-            //parametre
-            param.BackgroundImage = Properties.Resources.parametres_cog;
-            param.BackgroundImageLayout = ImageLayout.Zoom;
+            ////parametre
+            //param.BackgroundImage = Properties.Resources.parametres_cog;
+            //param.BackgroundImageLayout = ImageLayout.Zoom;
 
-            //image
-            panelimg.BackgroundImage = Properties.Resources.accord;
-            panelimg.BackgroundImageLayout = ImageLayout.Zoom;
+            ////image
+            //panelimg.BackgroundImage = Properties.Resources.accord;
+            //panelimg.BackgroundImageLayout = ImageLayout.Zoom;
 
             //user
-            utils.BackgroundImage = Properties.Resources.utilisateur;
-            utils.BackgroundImageLayout = ImageLayout.Zoom;
+            //utils.BackgroundImage = Properties.Resources.utilisateur;
+            //utils.BackgroundImageLayout = ImageLayout.Zoom;
 
             //welcome
-            panelwel.BackgroundImage = Properties.Resources.accueillir;
-            panelwel.BackgroundImageLayout = ImageLayout.Zoom;
+            //panelwel.BackgroundImage = Properties.Resources.accueillir;
+            //panelwel.BackgroundImageLayout = ImageLayout.Zoom;
+
+        }
+
+        private void util_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deconex_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
