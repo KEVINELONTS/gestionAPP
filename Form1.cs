@@ -161,5 +161,20 @@ namespace gestionAPP
            
         }
 
+        private void connexion_Click_1(object sender, EventArgs e)
+        {
+            // Créer une instance du Dashboard
+            DashboardForm dashboard = new DashboardForm();
+
+            // Masquer le formulaire actuel (Form1)
+            this.Hide();
+
+            // Afficher le dashboard
+            dashboard.ShowDialog();
+
+            // Fermer Form1 une fois que le dashboard est fermé
+            this.Close();
+
+        }
     }
 }

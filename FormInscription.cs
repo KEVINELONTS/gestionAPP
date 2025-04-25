@@ -58,6 +58,12 @@ namespace GestionApp
 
             MessageBox.Show("Inscription réussie !");
 
+
+            DashboardForm dashboard = new DashboardForm();
+            dashboard.Show();
+            this.Hide(); // pour fermer le formulaire actuel si tu veux
+
+
         }
 
         private void connexion_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)

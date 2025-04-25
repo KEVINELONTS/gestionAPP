@@ -122,6 +122,7 @@ namespace gestionAPP
             this.connexion.TabIndex = 6;
             this.connexion.Text = "Se connecter";
             this.connexion.UseVisualStyleBackColor = false;
+            this.connexion.Click += new System.EventHandler(this.connexion_Click_1);
             // 
             // MDP
             // 

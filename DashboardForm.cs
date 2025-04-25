@@ -60,5 +60,29 @@ namespace gestionAPP
             LoadUserControl(ucProduits);
 
         }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+            //notification
+            notif.BackgroundImage = Properties.Resources.notification;
+            notif.BackgroundImageLayout = ImageLayout.Zoom;
+
+            //parametre
+            param.BackgroundImage = Properties.Resources.parametres_cog;
+            param.BackgroundImageLayout = ImageLayout.Zoom;
+
+            //image
+            panelimg.BackgroundImage = Properties.Resources.accord;
+            panelimg.BackgroundImageLayout = ImageLayout.Zoom;
+
+            //user
+            utils.BackgroundImage = Properties.Resources.utilisateur;
+            utils.BackgroundImageLayout = ImageLayout.Zoom;
+
+            //welcome
+            panelwel.BackgroundImage = Properties.Resources.accueillir;
+            panelwel.BackgroundImageLayout = ImageLayout.Zoom;
+
+        }
     }
 }
