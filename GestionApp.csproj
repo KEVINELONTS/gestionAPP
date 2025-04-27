@@ -111,6 +111,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategorie.Designer.cs">
+      <DependentUpon>FormCategorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInscription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,17 +137,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlCategorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCategorie.Designer.cs">
+      <DependentUpon>UserControlCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlOperation.Designer.cs">
+      <DependentUpon>UserControlOperation.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlProduit.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlProduit.Designer.cs">
       <DependentUpon>UserControlProduit.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMouvStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMouvStock.Designer.cs">
+      <DependentUpon>UserControlMouvStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUtilisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUtilisateur.Designer.cs">
+      <DependentUpon>UserControlUtilisateur.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategorie.resx">
+      <DependentUpon>FormCategorie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInscription.resx">
       <DependentUpon>FormInscription.cs</DependentUpon>
@@ -162,8 +195,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlCategorie.resx">
+      <DependentUpon>UserControlCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlOperation.resx">
+      <DependentUpon>UserControlOperation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduit.resx">
       <DependentUpon>UserControlProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMouvStock.resx">
+      <DependentUpon>UserControlMouvStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUtilisateur.resx">
+      <DependentUpon>UserControlUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -199,6 +244,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\accueillir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notif-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croix-icone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croix-icone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croix-icone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croix-icone3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

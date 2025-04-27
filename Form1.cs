@@ -70,40 +70,7 @@ namespace gestionAPP
 
         private void connexion_Click(object sender, EventArgs e)
         {
-            string nom = Nom.Text;
-            string adresse = Adresse.Text;
-            string telephone = Tel.Text;
-            string motDePasse = MDP.Text;
-
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StockAppDB.mdf;Integrated Security=True";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = @"SELECT COUNT(*) FROM Utilisateurs 
-                         WHERE Nom = @Nom AND Adresse = @Adresse 
-                         AND Telephone = @Telephone AND MotDePasse = @MotDePasse";
-
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Nom", nom);
-                    cmd.Parameters.AddWithValue("@Adresse", adresse);
-                    cmd.Parameters.AddWithValue("@Telephone", telephone);
-                    cmd.Parameters.AddWithValue("@MotDePasse", motDePasse);
-
-                    int count = (int)cmd.ExecuteScalar();
-
-                    if (count > 0)
-                    {
-                        MessageBox.Show("Connexion réussie !");
-                        // Ouvre l'interface principale ici
-                    }
-                    else
-                    {
-                        MessageBox.Show("Informations incorrectes.");
-                    }
-                }
-            }
+            
 
         }
 
@@ -190,11 +157,7 @@ namespace gestionAPP
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            ArrondirControles(connexion, 20);
-            ArrondirControles(textBox1, 20);
-            ArrondirControles(textBox2, 20);
-            ArrondirControles(textBox3, 20);
-            ArrondirControles(textBox4, 20);
+            
         }
 
         public void ArrondirControles(Control crtl, int rayon)
@@ -207,6 +170,16 @@ namespace gestionAPP
             patht.CloseAllFigures();
 
             crtl.Region = new Region(patht);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Veux-tu vraiment quitter ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

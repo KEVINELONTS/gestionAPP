@@ -47,11 +47,11 @@ namespace gestionAPP
 
         }
 
-        private void LoadUserControl(UserControlProduit userControl_P)
+        private void LoadUserControl(UserControl userControl)
         {
             panelContent.Controls.Clear(); // Supprimer tout ce qui est déjà dedans
-            userControl_P.Dock = DockStyle.Fill; // Pour qu’il prenne tout l’espace
-            panelContent.Controls.Add(userControl_P); // Ajouter le nouveau contrôle
+            userControl.Dock = DockStyle.Fill; // Pour qu’il prenne tout l’espace
+            panelContent.Controls.Add(userControl); // Ajouter le nouveau contrôle
         }
 
         private void produit_Click(object sender, EventArgs e)
@@ -87,22 +87,41 @@ namespace gestionAPP
 
         private void util_Click(object sender, EventArgs e)
         {
-
+            UserControlUtilisateur ucUser = new UserControlUtilisateur();
+            LoadUserControl(ucUser);
         }
 
         private void deconex_Click(object sender, EventArgs e)
         {
-
+            UserControlCategorie ucCategorie = new UserControlCategorie();
+            LoadUserControl(ucCategorie);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Veux-tu vraiment quitter ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void mouv_Click(object sender, EventArgs e)
+        {
+            UserControlMouvStock ucMouvStock = new UserControlMouvStock();
+            LoadUserControl(ucMouvStock);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserControlOperation ucOperation = new UserControlOperation();
+            LoadUserControl(ucOperation);
         }
     }
 }

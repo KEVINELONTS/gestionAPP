@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.util = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.deconex = new System.Windows.Forms.Button();
             this.stats = new System.Windows.Forms.Button();
             this.produit = new System.Windows.Forms.Button();
             this.mouv = new System.Windows.Forms.Button();
-            this.util = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.titre = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.titre = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,36 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(210, 544);
             this.panelMenu.TabIndex = 0;
+            // 
+            // util
+            // 
+            this.util.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.util.FlatAppearance.BorderSize = 0;
+            this.util.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.util.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.util.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.util.Location = new System.Drawing.Point(25, 485);
+            this.util.Name = "util";
+            this.util.Size = new System.Drawing.Size(146, 34);
+            this.util.TabIndex = 0;
+            this.util.Text = "Utilisateurs";
+            this.util.UseVisualStyleBackColor = false;
+            this.util.Click += new System.EventHandler(this.util_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(25, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Operations";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // deconex
             // 
@@ -118,21 +148,7 @@
             this.mouv.TabIndex = 2;
             this.mouv.Text = "Mouvements";
             this.mouv.UseVisualStyleBackColor = false;
-            // 
-            // util
-            // 
-            this.util.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
-            this.util.FlatAppearance.BorderSize = 0;
-            this.util.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.util.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.util.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.util.Location = new System.Drawing.Point(25, 485);
-            this.util.Name = "util";
-            this.util.Size = new System.Drawing.Size(146, 34);
-            this.util.TabIndex = 0;
-            this.util.Text = "Utilisateurs";
-            this.util.UseVisualStyleBackColor = false;
-            this.util.Click += new System.EventHandler(this.util_Click);
+            this.mouv.Click += new System.EventHandler(this.mouv_Click);
             // 
             // panelContent
             // 
@@ -157,31 +173,6 @@
             this.panel1.Size = new System.Drawing.Size(867, 100);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // titre
-            // 
-            this.titre.AutoSize = true;
-            this.titre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titre.ForeColor = System.Drawing.Color.White;
-            this.titre.Location = new System.Drawing.Point(250, 18);
-            this.titre.Name = "titre";
-            this.titre.Size = new System.Drawing.Size(354, 47);
-            this.titre.TabIndex = 0;
-            this.titre.Text = "Gestion De Stock";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(105)))), ((int)(((byte)(252)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(25, 343);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 34);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Operations";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -216,6 +207,17 @@
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // titre
+            // 
+            this.titre.AutoSize = true;
+            this.titre.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titre.ForeColor = System.Drawing.Color.White;
+            this.titre.Location = new System.Drawing.Point(250, 18);
+            this.titre.Name = "titre";
+            this.titre.Size = new System.Drawing.Size(354, 47);
+            this.titre.TabIndex = 0;
+            this.titre.Text = "Gestion De Stock";
             // 
             // DashboardForm
             // 
